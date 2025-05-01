@@ -29,7 +29,7 @@ A modern 3D model viewer built with React, Three.js, and powerful helper librari
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/Samand3DViewer.git
+git clone https://github.com/mrsedghi/Samand3DViewer.git
 cd Samand3DViewer
  ```
 2. **Install dependencies**
