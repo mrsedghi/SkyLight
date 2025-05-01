@@ -1,10 +1,14 @@
 # Samand3DViewer - 3D Samand Viewer
 
-![Samand3DViewer](https://socialify.git.ci/mrsedghi/Samand3DViewer/image?font=KoHo&language=1&name=1&owner=1&pattern=Solid&theme=Auto)
+
 
 ![Samand3DViewer Screenshot](./public/screenshot.png) 
 
 A modern 3D model viewer built with React, Three.js, and powerful helper libraries for an immersive 3D experience.
+
+## Demo
+
+Demo url: https://samand-3d-viewer.vercel.app
 
 ## Features
 
