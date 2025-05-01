@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
@@ -10,18 +11,8 @@ import Model from "./Model";
 import { useControls } from "leva";
 
 function Car() {
-  const { scale, color } = useControls({
-    scale: { value: 0.015, min: 0.01, max: 0.05, step: 0.005 },
+  const { color } = useControls({
     color: "#fff",
-    Loop: { value: "Effects", options: { 1: 1, 2: 2 } },
-    loopEffects: { value: "Effects", options: { 1: 1, 2: 2 } },
-    primaryColor: "#fff",
-    SecenderyColorShow: false,
-    SecenderyColor: "#f0f",
-    AutoColorChange: false,
-    Gliter: true,
-    GliterColor: "#fff",
-    Speed: { value: 1, min: 0, max: 4, step: 1 },
   });
   return (
     <Canvas
@@ -30,7 +21,7 @@ function Car() {
       camera={{ position: [0, 0, 15], fov: 25 }}
     >
       <color attach="background" args={["#15151a"]} />
-      <Model rotation={[0, Math.PI / 1.5, 0]} scale={scale} />
+      <Model rotation={[0, Math.PI / 1.5, 0]} scale={0.015} />
       <hemisphereLight intensity={0.5} />
       <ContactShadows
         resolution={1024}
